@@ -1,0 +1,524 @@
+{
+  "refusal": "I don't know",
+  "in_domain": [
+    {
+      "q": "Which architecture was identified as the best for lung cancer detection from CT scans in the VGG16 vs CNN study?",
+      "facts": [
+        "VGG16 is the best-performing architecture"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "VGG16"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the study assessing VGG16 and CNN architectures for CT scan classification, what test accuracy did InceptionV3 obtain?",
+      "facts": [
+        "InceptionV3 obtained a test accuracy of 88.79%"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "88.79"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which technique was used to make the model's predictions interpretable?",
+      "facts": [
+        "Grad-CAM was used for interpretability"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "Grad-CAM"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What limitation do 2D images have compared to 3D CNNs for CT analysis?",
+      "facts": [
+        "2D images cannot capture depth-related / spatial features across planes"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "3D"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "How many CT images and patients were in the dataset of the VGG16 lung cancer study?",
+      "facts": [
+        "The dataset contains 1097 CT images from 110 patients"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "1097",
+        "110 patients"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which dataset of lung CT images is cited (IQ-OTH/NCCD)?",
+      "facts": [
+        "The IQ-OTH/NCCD lung cancer dataset is used or cited"
+      ],
+      "src": null,
+      "keys": [
+        "IQ-OTH"
+      ],
+      "kind": "global"
+    },
+    {
+      "q": "Which two datasets were combined to evaluate the YOLO and Capsule Network hybrid model for lung nodule detection?",
+      "facts": [
+        "The model was evaluated on a combination of the LIDC-IDRI and Lung-PET-CT-Dx datasets"
+      ],
+      "src": "1-s2.0",
+      "keys": [
+        "LIDC-IDRI",
+        "Lung-PET-CT-Dx"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What classification accuracy did the Cropped Image CapsNet achieve in the YOLO-CapsNet hybrid study?",
+      "facts": [
+        "The Cropped Image CapsNet achieved a classification accuracy of about 95.5%"
+      ],
+      "src": "1-s2.0",
+      "keys": [
+        "95.5"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What improvements over baseline did Scale-Adaptive Curriculum Learning (SACL) achieve at 10%, 20% and 50% of the training data?",
+      "facts": [
+        "SACL improved over the baseline by about 4.6%, 3.5% and 2.0% at 10%, 20% and 50% of the training data"
+      ],
+      "src": "2510.26923",
+      "keys": [
+        "4.6%",
+        "3.5%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which dataset and base detector were used to evaluate SACL?",
+      "facts": [
+        "SACL was evaluated on the LUNA25 dataset",
+        "YOLOv11 was used as the base detector"
+      ],
+      "src": "2510.26923",
+      "keys": [
+        "LUNA25",
+        "YOLOv11"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What two security primitives are introduced in the paper on protecting context and prompts in LLM applications?",
+      "facts": [
+        "The paper introduces authenticated prompts and authenticated context"
+      ],
+      "src": "2602.10481",
+      "keys": [
+        "authenticated context"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What detection rate and false positive rate did the authenticated prompts/context defenses achieve?",
+      "facts": [
+        "The defenses achieved 100% detection with zero false positives"
+      ],
+      "src": "2602.10481",
+      "keys": [
+        "100% detection"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which algorithm performed best for land cover classification in the Gilgit-Baltistan mountainous region, and with what overall accuracy and kappa?",
+      "facts": [
+        "Random forest performed best",
+        "overall accuracy of 0.79",
+        "kappa coefficient of 0.76"
+      ],
+      "src": "Assessment of Machine",
+      "keys": [
+        "0.79",
+        "0.76"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What percentage of the Gilgit-Baltistan area was classified as barren land by the random forest map?",
+      "facts": [
+        "Barren land accounted for 46.7% of the area"
+      ],
+      "src": "Assessment of Machine",
+      "keys": [
+        "46.7%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which classifier performed best for classifying NSCLC subtypes from the lung microbiome, and with what accuracy and AUROC?",
+      "facts": [
+        "XGBoost performed best",
+        "accuracy of 76.25%",
+        "AUROC of 0.81"
+      ],
+      "src": "NSCLC",
+      "keys": [
+        "76.25%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which method was used to identify differentially enriched microbial taxa in the NSCLC microbiome study?",
+      "facts": [
+        "LEfSe was used to identify differentially enriched taxa"
+      ],
+      "src": "NSCLC",
+      "keys": [
+        "LEfSe"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What testing accuracy did the Enhanced CNN achieve in the deep learning-based lung cancer diagnosis study using CT-scan images?",
+      "facts": [
+        "The Enhanced CNN achieved a testing accuracy of 100%"
+      ],
+      "src": "Deep learning-based approach",
+      "keys": [
+        "100 %"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which architectures were used with transfer learning in the land-cover classification study with high-resolution remote-sensing imagery?",
+      "facts": [
+        "Inception-v3 was used with transfer learning",
+        "DenseNet121 was used with transfer learning"
+      ],
+      "src": "Land-Cover Classification Using",
+      "keys": [
+        "DenseNet121"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What dice coefficient was obtained for lung tumor segmentation on the LOTUS dataset, and with which approach?",
+      "facts": [
+        "A dice coefficient of 0.8472 was obtained",
+        "using a Discrete Wavelet Transform with a Deeply Supervised MultiResUNet"
+      ],
+      "src": "LungPaper",
+      "keys": [
+        "0.8472",
+        "LOTUS"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which YOLO version performed best for lung cancer detection on the Lung-PET-CT-Dx dataset in the YOLO comparison study, and with what precision and recall?",
+      "facts": [
+        "YOLOv8 performed best",
+        "precision of 90.32%",
+        "recall of 84.91%"
+      ],
+      "src": "fmed",
+      "keys": [
+        "90.32%",
+        "84.91%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What forest cover mandate does Bhutan have, according to the Gelephu LULC and NDVI study?",
+      "facts": [
+        "Bhutan has a mandate to maintain 60% forest cover"
+      ],
+      "src": "Gelephu",
+      "keys": [
+        "60% forest"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "According to the review on deep learning for satellite image time series, what distinguishes classification tasks from regression tasks?",
+      "facts": [
+        "Classification predicts discrete values while regression predicts continuous numeric values"
+      ],
+      "src": "2404.03936",
+      "keys": [
+        "discrete values"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What test accuracy did InceptionV3 obtain?",
+      "facts": [
+        "InceptionV3 obtained 88.79% test accuracy in the VGG16/CNN architectures study",
+        "InceptionV3 obtained 76.9% testing accuracy in the deep learning-based lung cancer diagnosis study"
+      ],
+      "src": null,
+      "keys": [
+        "88.79",
+        "76.9"
+      ],
+      "kind": "ambigua"
+    },
+    {
+      "q": "In the YOLO and Capsule Network hybrid study for lung nodule detection, what overall accuracy did the proposed hybrid model achieve?",
+      "facts": [
+        "The three-stage YOLO-CapsNet-YOLO pipeline achieved an overall detection accuracy of 89.98%"
+      ],
+      "src": "1-s2.0",
+      "keys": [
+        "89.98"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the YOLO-CapsNet hybrid study, what F1-score did the Cropped Image CapsNet obtain?",
+      "facts": [
+        "The Cropped Image CapsNet obtained an F1-score of 95.53%"
+      ],
+      "src": "1-s2.0",
+      "keys": [
+        "95.53"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the SACL lung nodule detection study, what mAP50 did SACL reach when trained on 10% of the data?",
+      "facts": [
+        "SACL reached an mAP50 of 55.61% with 10% of the training data"
+      ],
+      "src": "2510.26923",
+      "keys": [
+        "55.61"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "How many low-dose chest CT examinations does the LUNA25 dataset contain, according to the SACL study?",
+      "facts": [
+        "LUNA25 contains 4,096 low-dose chest CT examinations"
+      ],
+      "src": "2510.26923",
+      "keys": [
+        "4,096"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What performance overhead do the authenticated prompts and authenticated context defenses introduce?",
+      "facts": [
+        "The defenses introduce a performance overhead of 1.8%"
+      ],
+      "src": "2602.10481",
+      "keys": [
+        "1.8%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the VGG16 vs CNN lung cancer CT study, what test accuracy did VGG16 achieve?",
+      "facts": [
+        "VGG16 achieved a test accuracy of 98.18%"
+      ],
+      "src": "AI-Powered",
+      "keys": [
+        "98.18"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the Gilgit-Baltistan land cover study, what percentage of the area was classified as snow cover?",
+      "facts": [
+        "22.9% of the area was classified as snow cover"
+      ],
+      "src": "Assessment of Machine",
+      "keys": [
+        "22.9%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "How many sample points were used in the Gilgit-Baltistan land cover classification study?",
+      "facts": [
+        "2759 sample points were used"
+      ],
+      "src": "Assessment of Machine",
+      "keys": [
+        "2759"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the NSCLC lung microbiome study, how many potential microbial markers were identified with LEfSe?",
+      "facts": [
+        "Ten potential microbial markers were identified"
+      ],
+      "src": "NSCLC",
+      "keys": [
+        "LEfSe"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the NSCLC lung microbiome study, what AUROC did XGBoost obtain on the independent dataset?",
+      "facts": [
+        "XGBoost obtained an AUROC of 0.71 on the independent dataset"
+      ],
+      "src": "NSCLC",
+      "keys": [
+        "0.71"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the deep learning-based lung cancer diagnosis study using CT-scan images, how many adenocarcinoma images were in the dataset?",
+      "facts": [
+        "The dataset contained 338 adenocarcinoma images"
+      ],
+      "src": "Deep learning-based approach",
+      "keys": [
+        "338"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the deep learning-based lung cancer diagnosis study using CT-scan images, what testing accuracy did ResNet50 achieve?",
+      "facts": [
+        "ResNet50 achieved a testing accuracy of 94.5%"
+      ],
+      "src": "Deep learning-based approach",
+      "keys": [
+        "94.5"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "In the land-cover classification study with high-resolution remote-sensing imagery, what testing accuracy did Inception-v3 achieve?",
+      "facts": [
+        "Inception-v3 achieved a testing accuracy of 95%"
+      ],
+      "src": "Land-Cover Classification Using",
+      "keys": [
+        "95%"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "How many training and testing samples from the LOTUS dataset were used in the lung tumor segmentation study?",
+      "facts": [
+        "31,247 training samples and 4,458 testing samples were used"
+      ],
+      "src": "LungPaper",
+      "keys": [
+        "31,247",
+        "4,458"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which transform was used for textural analysis in the LOTUS lung tumor segmentation study?",
+      "facts": [
+        "A two-dimensional Discrete Wavelet Transform (DWT) was used"
+      ],
+      "src": "LungPaper",
+      "keys": [
+        "Discrete Wavelet"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "According to the Gelephu LULC and NDVI study, by what percentage did water bodies decrease?",
+      "facts": [
+        "Water bodies decreased by 1.65%"
+      ],
+      "src": "Gelephu",
+      "keys": [
+        "1.65"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "According to the Gelephu LULC and NDVI study, by what percentage did the area with no vegetation increase?",
+      "facts": [
+        "The area with no vegetation increased by 9.56%"
+      ],
+      "src": "Gelephu",
+      "keys": [
+        "9.56"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What AUC did the classification model reach in the Gelephu LULC and NDVI study?",
+      "facts": [
+        "The classification model reached an AUC of up to 0.89"
+      ],
+      "src": "Gelephu",
+      "keys": [
+        "0.89"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "Which public dataset was used to train and evaluate the YOLO models in the YOLO comparison study for lung cancer detection?",
+      "facts": [
+        "The Lung-PET-CT-Dx dataset was used"
+      ],
+      "src": "fmed",
+      "keys": [
+        "Lung-PET-CT-"
+      ],
+      "kind": "específica"
+    },
+    {
+      "q": "What test accuracy did ResNet50 obtain?",
+      "facts": [
+        "ResNet50 obtained 93.33% test accuracy in the VGG16/CNN architectures study",
+        "ResNet50 obtained 94.5% testing accuracy in the deep learning-based lung cancer diagnosis study",
+        "ResNet-50 obtained 93% testing accuracy in the land-cover classification study with remote-sensing imagery"
+      ],
+      "src": null,
+      "keys": [
+        "93.33",
+        "94.5"
+      ],
+      "kind": "ambigua"
+    },
+    {
+      "q": "Which studies used the Lung-PET-CT-Dx dataset?",
+      "facts": [
+        "The YOLO-CapsNet hybrid lung nodule detection study used Lung-PET-CT-Dx",
+        "The YOLO comparison study for lung cancer detection used Lung-PET-CT-Dx"
+      ],
+      "src": null,
+      "keys": [
+        "Lung-PET-CT-"
+      ],
+      "kind": "ambigua"
+    }
+  ],
+  "out_of_domain": [
+    "What is the capital of France?",
+    "Who won the 2022 FIFA World Cup?",
+    "What accuracy did VGG16 achieve on breast cancer mammography classification?",
+    "Which transformer model performed best for brain tumor MRI segmentation?",
+    "What is the five-year survival rate for pancreatic cancer?",
+    "What is the recommended chemotherapy regimen for lung adenocarcinoma?",
+    "How many parameters does GPT-4 have?",
+    "What dice coefficient did MultiResUNet achieve on the BraTS brain tumor dataset?",
+    "What accuracy did random forest achieve for land cover classification in the Amazon rainforest?",
+    "What accuracy did the YOLO-CapsNet hybrid achieve on breast ultrasound images?"
+  ]
+}

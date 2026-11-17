@@ -1,0 +1,8 @@
+# Sin versiones fijadas: ver PENDIENTES.md (fijarlas con `pip freeze` en el cluster).
+pypdf
+langchain-text-splitters
+databricks-vectorsearch
+mlflow>=3
+databricks-sdk
+openai
+pandas
