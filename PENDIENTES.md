@@ -2,9 +2,9 @@
 
 Cosas que solo se pueden hacer o decidir en el workspace de Databricks, o que la fuente no documenta.
 
-- [ ] **Ejecutar los notebooks 01 a 03 de punta a punta en Databricks.** Este refactor (notebook -> repo) no se ha ejecutado allí; solo se verificaron los tests, la compilación y los imports sin dependencias pesadas. En particular, comprobar que la celda `%pip install` seguida de `dbutils.library.restartPython()` funciona tal como está escrita en los notebooks.
-- [ ] **Confirmar que el refactor conserva el comportamiento medido**: repetir `run_eval(make_rag(), "v6")` y comparar con correctness 0.909 (set de 44 + 10).
-- [ ] **Fijar versiones**: `pip freeze` en el cluster y copiar las versiones a `requirements.txt` (hoy no tienen versión, salvo `mlflow>=3`). TODO(Juan)
+- [x] **Ejecutar los notebooks 01 a 03 de punta a punta en Databricks** (16-nov-2026). La celda `%pip install` + `restartPython()` funciona. Se corrigió `ensure_index()`, que bloqueaba el notebook 01 tras re-ingerir.
+- [x] **Confirmar que el refactor conserva el comportamiento medido**: una corrida de v6 dio correctness 0.909 (set de 44 + 10), igual que el notebook original.
+- [ ] **Fijar versiones**: `pip freeze` en el cluster y copiar las versiones a `requirements.txt` (hoy no tienen versión, salvo `mlflow>=3`). La re-ingesta del 16-nov dio 1111 chunks frente a 1112 del original, probablemente por esto. TODO(Juan)
 - [ ] **Completar enlaces y DOI** de los papers en `data/README.md` (solo los tres de arXiv están enlazados). TODO(Juan)
 - [ ] **Migrar dependencias deprecadas** (avisos del notebook): `databricks-vectorsearch` -> `databricks-ai-search`, y `get_open_ai_client()` -> paquete `databricks-openai` (`DatabricksOpenAI`). Se mantuvieron las actuales porque son las probadas.
 - [ ] **Crear el endpoint de Vector Search** a mano en la UI (el repo no lo crea por código).

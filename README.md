@@ -95,7 +95,10 @@ Los valores por defecto se pueden sobreescribir con variables de entorno:
 | `RAG_EMBEDDING_MODEL` | `databricks-qwen3-embedding-0-6b` |
 | `RAG_LLM_ENDPOINT` | `databricks-meta-llama-3-3-70b-instruct` |
 
-Este refactor del notebook a repo no se ha ejecutado todavía en Databricks (ver [`PENDIENTES.md`](PENDIENTES.md)).
+**Validación del repo (16 de noviembre de 2026):** los notebooks 01 a 03 se ejecutaron de punta a punta en Databricks
+Free Edition. Una corrida de `03_evaluacion` dio correctness 0.909, relevance_to_query 1.000, retrieval_groundedness
+0.977, retrieval_relevance 0.428 y 1.000 fuera de tema, igual que el notebook original. La re-ingesta produjo 1111 chunks
+(1112 en el notebook original), probablemente por versiones distintas de las librerías de PDF y chunking.
 
 ## Estructura del repo
 
