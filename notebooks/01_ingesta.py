@@ -54,7 +54,7 @@ upsert_chunks(build_chunks())
 # MAGIC %md
 # MAGIC ## 4. Índice vectorial
 # MAGIC
-# MAGIC `ensure_index()` crea el índice si no existe y espera a que quede en sincronía con la tabla.
+# MAGIC `ensure_index()` crea el índice si no existe (y espera a su primera sincronización); si ya existe, solo muestra su estado.
 
 # COMMAND ----------
 

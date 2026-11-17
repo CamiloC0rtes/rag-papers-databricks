@@ -64,9 +64,11 @@ def index_exists():
 
 
 def ensure_index():
-    """Camino para montar desde cero: crea el índice si no existe y espera a que quede en sincronía."""
-    if not index_exists():
-        create_index()
+    """Camino para montar desde cero: crea el índice si no existe y espera a su primera sincronización.
+    Si ya existe no espera: tras re-ingerir, la tabla y el índice difieren hasta que se llame sync_index()."""
+    if index_exists():
+        return index_status()
+    create_index()
     return wait_for_index()
 
 
