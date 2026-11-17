@@ -81,7 +81,7 @@ original se probó en Databricks Free Edition).
 
 1. Clona el repo como Git folder en el workspace.
 2. Crea el endpoint de Vector Search en la UI (por defecto `genai_lab_vs`). No se crea por código.
-3. Sube los PDFs al Volume (ver [`data/README.md`](data/README.md)).
+3. Sube los PDFs al Volume (enlaces en [`data/README.md`](data/README.md)).
 4. Ejecuta los notebooks en orden: `notebooks/01_ingesta.py`, `02_demo.py` y `03_evaluacion.py`.
 
 Los valores por defecto se pueden sobreescribir con variables de entorno:
@@ -99,6 +99,15 @@ Los valores por defecto se pueden sobreescribir con variables de entorno:
 Free Edition. Una corrida de `03_evaluacion` dio correctness 0.909, relevance_to_query 1.000, retrieval_groundedness
 0.977, retrieval_relevance 0.428 y 1.000 fuera de tema, igual que el notebook original. La re-ingesta produjo 1111 chunks
 (1112 en el notebook original), probablemente por versiones distintas de las librerías de PDF y chunking.
+
+## Trabajo futuro
+
+- **Preguntas ambiguas** (varios papers responden): hoy dan 0 a 0.33 de correctness. Es la mayor debilidad del sistema.
+- **Latencia del reranker**: 8 llamadas al LLM por pregunta. La variante de 2 llamadas es más rápida pero pierde
+  correctness; falta una opción intermedia que conserve la calidad.
+- **Set de evaluación más grande**: con 44 preguntas, cada una mueve la correctness 0.023.
+- **Dependencias deprecadas**: migrar `databricks-vectorsearch` a `databricks-ai-search` y `get_open_ai_client()` a
+  `databricks-openai`, y volver a validar con `03_evaluacion`.
 
 ## Estructura del repo
 

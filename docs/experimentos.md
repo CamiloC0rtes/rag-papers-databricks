@@ -47,7 +47,7 @@ Resultados registrados en el notebook (23 del dominio + 5 fuera de tema, set cor
 | v5-rr2 | 0.870 | 0.913 | 0.957 | 0.527 | 1.0 |
 | v6 | 0.957 | 1.000 | 1.000 | 0.422 | 1.0 |
 
-`v5-rr2` se cita tal cual aparece en el comentario del notebook; su configuración exacta no quedó documentada.
+`v5-rr2` se cita tal cual aparece en el comentario del notebook. Su configuración exacta no quedó documentada y no se reproduce: se conserva solo como referencia histórica, y la configuración vigente es v6.
 `retrieval_relevance` baja en v6 porque el juez cuenta los chunks del abstract como no relevantes.
 
 ## Set final: v6 x3 y variante barata (12-13-nov)
@@ -113,6 +113,6 @@ Se aplicaron sobre los casos originales y los nuevos; `verify_cases` comprueba q
 | SACL (mejoras sobre el baseline) | `facts` y `keys` pasan a la forma relativa: "about 4.6%, 3.5% and 2.0%" y claves `4.6%`, `3.5%` | El abstract reporta la forma relativa. |
 | Land-cover (arquitecturas con transfer learning) | Dos hechos separados: Inception-v3 y DenseNet121 | El paper también propone ResNet-50 (sección 2.5), así que se piden los dos modelos del abstract como hechos separados. |
 | "What test accuracy did InceptionV3 obtain?" | `kind` = ambigua | Dos artículos responden (88.79% y 76.9%). |
-| Nuevo 0: accuracy global del híbrido YOLO-CapsNet | `facts` pasa a "The three-stage YOLO-CapsNet-YOLO pipeline achieved an overall detection accuracy of 89.98%" | El notebook solo registra el cambio, sin motivo explícito. Esta pregunta sigue entre las que más fallan. |
+| Nuevo 0: accuracy global del híbrido YOLO-CapsNet | `facts` pasa a "The three-stage YOLO-CapsNet-YOLO pipeline achieved an overall detection accuracy of 89.98%" | El hecho se reformula para describir la cifra como lo hace el paper: es la accuracy de detección del pipeline completo de tres etapas, no la de un modelo aislado. Esta pregunta sigue entre las que más fallan. |
 | Nuevo 18 (dataset del estudio de comparación YOLO) y nuevo 20 (estudios que usaron Lung-PET-CT-Dx) | `keys` = `Lung-PET-CT-` | El PDF parte el nombre: 'Lung-PET-CT- Dx'. |
-| Nuevo 19 (ResNet50, ambigua) | Se añade un tercer hecho: ResNet-50 con 93% de accuracy en el estudio de land-cover | El notebook solo registra el cambio; el paper de land-cover también usa ResNet-50 (ver corrección de land-cover). |
+| Nuevo 19 (ResNet50, ambigua) | Se añade un tercer hecho: ResNet-50 con 93% de accuracy en el estudio de land-cover | La pregunta es ambigua a propósito y el paper de land-cover también reporta ResNet-50 (sección 2.5), así que una respuesta completa debe incluirlo. |

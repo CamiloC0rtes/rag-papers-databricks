@@ -18,7 +18,7 @@ def get_spark():
 
 def get_llm():
     """Cliente compatible con OpenAI del endpoint de Foundation Models.
-    Nota: get_open_ai_client() está deprecado (ver PENDIENTES.md); se mantiene porque es lo que se probó."""
+    Nota: get_open_ai_client() está deprecado (ver "Trabajo futuro" en el README); se mantiene porque es lo que se probó."""
     global _llm
     if _llm is None:
         from databricks.sdk import WorkspaceClient
